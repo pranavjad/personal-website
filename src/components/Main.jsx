@@ -1,30 +1,31 @@
 import React from 'react'
 import Project from './Project'
+import Link from './Link'
 // 1fr minmax(auto, var(880px)) 1fr
 function Main() {
   return (
     <div className='grid grid-cols-medium gap-y-12 gap-x-4'>
         <div></div>
         <div className='h-[400px] flex flex-col justify-center'>
-            <h1 className='text-5xl font-bold mb-4'>
-                Hello! I'm Pranav. A first year CS student at Purdue University interested in ML and LLMs.
+            <h1 className='text-5xl font-medium mb-4 leading-normal font-display'>
+                Hey there 👋! I'm Pranav, a first year CS 💻 student at Purdue University 🚂 interested in ML and LLMs 🤖.
             </h1>
-            <div className='flex gap-5 text-2xl'>
-                <a href="">
-                    Work
-                </a>
-                <a href="">
+            <div className='flex gap-2'>
+                <Link href="">
+                    About Me
+                </Link>
+                <Link href="">
                     Projects
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                     Github
-                </a>
+                </Link>
             </div>
         </div>
         <div></div>
         <div></div>
         <section id='about' className=''>
-            <h2 className='text-4xl font-bold mb-4'>
+            <h2 className='text-4xl font-medium mb-4'>
                 About Me
             </h2>
             <div className='mb-4 text-2xl'>
@@ -40,7 +41,7 @@ function Main() {
         <div></div>
         <div></div>
         <section id='projects' className=''>
-            <h2 className='text-4xl font-bold mb-6'>
+            <h2 className='text-4xl font-medium mb-6'>
                 Projects
                 
             </h2>
@@ -49,7 +50,7 @@ function Main() {
                     <div className='bg-gradient-to-r from-sky-200 to-indigo-200 rounded-[20px]'>
                         <img src="/Browser_Puzzle.png" alt="Picture of the browser puzzle website" className='rounded mb-2 scale-75' />
                     </div>
-                    <h2 className='text-3xl font-bold py-2'>Browser Puzzle</h2>
+                    <h2 className='text-3xl font-medium py-2'>Browser Puzzle</h2>
                     <span className='text-2xl'>
                         A website to solve puzzles in the browser. Built using p5.js.
                     </span>
@@ -58,7 +59,7 @@ function Main() {
                 <div className='bg-gradient-to-r from-sky-200 to-indigo-200 rounded-[20px]'>
                     <img src="/Multiplayer_Wordle.png" alt="Picture of the Multiplayer Wordle website" className='rounded mb-2 scale-75' />
                 </div>
-                    <h2 className='text-3xl font-bold py-2'>Multiplayer Wordle</h2>
+                    <h2 className='text-3xl font-medium py-2'>Multiplayer Wordle</h2>
                     <span className='text-2xl'>
                         Multiplayer wordle game made for the MIT Blueprint hackathon. Won 3rd place!
                     </span>
@@ -67,7 +68,7 @@ function Main() {
                 <div className='bg-gradient-to-r from-sky-200 to-indigo-200 rounded-[20px]'>
                     <img src="/Ethereum_Dashboard.png" alt="Picture of the ethereum dashboard page" className='rounded mb-2 scale-75' />
                 </div>
-                    <h2 className='text-3xl font-bold py-2'>Ethereum Dashboard</h2>
+                    <h2 className='text-3xl font-medium py-2'>Ethereum Dashboard</h2>
                     <span className='text-2xl'>
                         Ethereum data web dashboard with custom dataset scraped from a multitude of free API sources.
                     </span>

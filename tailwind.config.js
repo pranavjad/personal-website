@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Inter']
+    },
     extend: {
       gridTemplateColumns: {
         'medium': 'var(--default-gutter) minmax(auto, var(--max-width-medium)) var(--default-gutter)'
