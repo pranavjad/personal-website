@@ -1,8 +1,8 @@
-import React, { Children } from 'react'
+import React from 'react'
 
 function Link(props) {
   return (
-    <a href={props.href} className='bg-green-50 p-3 rounded-md text-green-800'>
+    <a className='text-green-800 border-transparent border-b-2 border-dotted transition-colors ease-in duration-150  hover:border-green-600' href={props.href}>
         {props.children}
     </a>
   )
