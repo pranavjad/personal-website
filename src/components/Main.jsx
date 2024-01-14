@@ -4,11 +4,11 @@ import Link from './Link'
 // 1fr minmax(auto, var(880px)) 1fr
 function Main() {
   return (
-    <div className='grid grid-cols-medium gap-y-12 gap-x-4'>
-        <div></div>
-        <div className='h-[400px] flex flex-col justify-center'>
+    <div className='grid grid-cols-medium gap-y-24 gap-x-4 items-stretch'>
+        <div className='h-[400px] flex flex-col justify-center col-start-2'>
             <h1 className='text-5xl font-medium mb-4 leading-normal font-display'>
-                Hey there 👋! I'm Pranav, a first year CS 💻 student at Purdue University 🚂 interested in ML and LLMs 🤖.
+                Hey there <div className='animate-wiggle inline-block mr-2'>👋</div>
+                I'm Pranav, a first year CS student at Purdue University 🚂 interested in ML and LLMs 🤖.
             </h1>
             <div className='flex gap-2'>
                 <Link href="">
@@ -22,9 +22,7 @@ function Main() {
                 </Link>
             </div>
         </div>
-        <div></div>
-        <div></div>
-        <section id='about' className=''>
+        <section id='about' className='py-8 bg-green-50 col-start-2'>
             <h2 className='text-4xl font-medium mb-4'>
                 About Me
             </h2>
@@ -38,9 +36,7 @@ function Main() {
                 Resume
             </div>
         </section>
-        <div></div>
-        <div></div>
-        <section id='projects' className=''>
+        <section id='projects' className='col-start-2'>
             <h2 className='text-4xl font-medium mb-6'>
                 Projects
                 
@@ -76,7 +72,6 @@ function Main() {
             </ul>
             
         </section>
-        <div></div>
     </div>
   )
 }
