@@ -15,13 +15,13 @@ function Main() {
                     I'm Pranav, a first year CS student at Purdue University 🚂 interested in ML and LLMs 🤖.
                 </h1>
                 <div className='flex gap-2'>
-                    <LinkButton href="">
+                    <LinkButton href="#about">
                         About Me
                     </LinkButton>
-                    <LinkButton href="">
+                    <LinkButton href="#projects">
                         Projects
                     </LinkButton>
-                    <LinkButton href="">
+                    <LinkButton href="https://github.com/pranavjad">
                         Github
                     </LinkButton>
                 </div>
@@ -48,43 +48,34 @@ function Main() {
                 </div>
             </div>
         </section>
-        <section id='projects' className='grid grid-cols-medium gap-x-4 items-stretch mt-8'>
-            <div className='col-start-2'>
-                <h2 className='text-4xl font-medium mb-6'>
-                    Projects
-                
-                </h2>
-                <ul className='grid grid-columns-1 gap-x-4 gap-y-24'>
-                    <li className=''>
-                        <div className='bg-gradient-to-r from-emerald-100 to-green-100 rounded-[20px]'>
-                            <img src="/Browser_Puzzle.png" alt="Picture of the browser puzzle website" className='rounded mb-2 scale-75 drop-shadow-2xl' />
-                        </div>
-                        <h2 className='text-3xl font-medium py-2'>Browser Puzzle</h2>
-                        <span className='text-2xl text-zinc-500'>
+        <div className='grid grid-cols-medium gap-x-4 items-stretch mt-8 gap-y-24'>
+            <section id='projects' className='col-start-2'>
+                <div>
+                    <h2 className='text-4xl font-medium mb-6'>
+                        Projects
+                    </h2>
+                    <ul className='grid grid-columns-1 gap-x-4 gap-y-24'>
+                        <Project img="/Browser_Puzzle.png" title="Browser Puzzle" gradient='bg-gradient-to-r from-blue-100 to-indigo-100'>
                             Browser based puzzle game. Built using p5.js.
-                        </span>
-                    </li>
-                    <li>
-                    <div className='bg-gradient-to-r from-sky-100 to-indigo-100 rounded-[20px]'>
-                        <img src="/Multiplayer_Wordle.png" alt="Picture of the Multiplayer Wordle website" className='rounded mb-2 scale-75 drop-shadow-2xl' />
-                    </div>
-                        <h2 className='text-3xl font-medium py-2'>Multiplayer Wordle</h2>
-                        <span className='text-2xl text-zinc-500'>
+                        </Project>
+                        <Project img='/Multiplayer_Wordle.png' title="Multiplayer Wordle" gradient="bg-gradient-to-r from-sky-100 to-indigo-100">
                             Multiplayer wordle game made for the MIT Blueprint hackathon. Won 3rd place!
-                        </span>
-                    </li>
-                    <li>
-                    <div className='bg-gradient-to-r from-indigo-100 to-rose-100 rounded-[20px]'>
-                        <img src="/Ethereum_Dashboard.png" alt="Picture of the ethereum dashboard page" className='rounded mb-2 scale-75 drop-shadow-2xl' />
-                    </div>
-                        <h2 className='text-3xl font-medium py-2'>Ethereum Dashboard</h2>
-                        <span className='text-2xl text-zinc-500'>
+                        </Project>
+                        <Project img='/Ethereum_Dashboard.png' title="Ethereum Dashboard" gradient="bg-gradient-to-r from-indigo-100 to-rose-100">
                             Ethereum data web dashboard with custom dataset scraped from a multitude of free API sources.
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                        </Project>
+                    </ul>
+                </div>
+            </section>
+            <section id='contact' className='col-start-2 my-6'>
+                <h2 className='text-4xl font-medium mb-6'>
+                    Contact
+                </h2>
+                <p className='text-2xl'>
+                    Email me at pra168109@gmail.com, or jadhav14@purdue.edu.
+                </p>
+            </section>
+        </div>
     </div>
   )
 }
